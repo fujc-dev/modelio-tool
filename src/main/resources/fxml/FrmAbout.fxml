@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="135.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lyrcsoft.modelio.controller.FrmAboutController">
+   <children>
+      <Label layoutX="28.0" layoutY="26.0" text="Modelio Open Source 5.4 生成Modelio工具" />
+      <Label layoutX="28.0" layoutY="70.0" text="Runtime version: 17.0.3+7-b469.32 amd64" />
+      <Label layoutX="79.0" layoutY="106.0" text="技术支持微信：fujc2dev" />
+   </children>
+</AnchorPane>

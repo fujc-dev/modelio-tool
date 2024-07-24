@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:modelio.db
+    driver-class-name: org.sqlite.JDBC
+  profiles:
+    active: dev

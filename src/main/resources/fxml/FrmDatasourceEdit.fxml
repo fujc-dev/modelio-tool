@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="152.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lyrcsoft.modelio.controller.FrmDatasourceEditController">
+    <children>
+        <Button id="test_connection" layoutX="114.0" layoutY="123.0" mnemonicParsing="false" onAction="#OnTestConnectionClick" text="测试连接"/>
+        <Button id="generate_staruml" layoutX="271.0" layoutY="123.0" mnemonicParsing="false" onAction="#OnSaveConnectionClick" text="保存连接"/>
+        <Label layoutX="18.0" layoutY="18.0" text="驱动名称："/>
+        <Label layoutX="19.0" layoutY="43.0" text="连接字符串："/>
+        <Label layoutX="18.0" layoutY="70.0" text="用户名："/>
+        <Label layoutX="19.0" layoutY="96.0" text="密码："/>
+        <TextField fx:id="driver_class_name" layoutX="94.0" layoutY="14.0" prefHeight="23.0" prefWidth="354.0" text="com.mysql.cj.jdbc.Driver"/>
+        <TextField fx:id="url" layoutX="94.0" layoutY="40.0" prefHeight="23.0" prefWidth="354.0" text="jdbc:mysql://localhost:3306/dbname?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=Asia/Shanghai&amp;nullCatalogMeansCurrent=true"/>
+        <TextField fx:id="username" layoutX="94.0" layoutY="66.0" prefHeight="23.0" prefWidth="354.0" text="root"/>
+        <TextField fx:id="password" layoutX="94.0" layoutY="92.0" prefHeight="23.0" prefWidth="354.0" text="123456"/>
+    </children>
+</AnchorPane>

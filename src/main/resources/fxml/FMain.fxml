@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="230.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lyrcsoft.modelio.controller.FMainController">
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="465.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="文件">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#OnDatabaseSourceManagerClick" text="数据源管理" />
+                        <MenuItem mnemonicParsing="false" onAction="#OnExitClick" text="退出" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="帮助">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#OnAboutClick" text="关于" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+        <Button id="test_connection" layoutX="94.0" layoutY="175.0" mnemonicParsing="false" onAction="#OnTextConnectionClick" text="测试连接" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="94.0" />
+        <Button id="generate_staruml" layoutX="324.0" layoutY="175.0" mnemonicParsing="false" onAction="#OnGenerateUMLClick" text="生成Modelio" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="53.0" />
+        <Label layoutX="7.0" layoutY="49.0" text="数据源：" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="49.0" />
+        <Label layoutX="5.0" layoutY="82.0" text="导出地址：" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="82.0" />
+
+        <TextField id="filepath" fx:id="filepath" disable="true" layoutX="74.146484375" layoutY="78.0" prefHeight="23.0" prefWidth="306.0" text="D:\" AnchorPane.rightAnchor="84.853515625" AnchorPane.topAnchor="78.0" />
+        <Button layoutX="396.146484375" layoutY="78.0" mnemonicParsing="false" onAction="#OnChooserDirectoryClick" text="选择目录" AnchorPane.rightAnchor="4.853515625" />
+        <ComboBox id="comboBox" fx:id="comboBox" layoutX="74.0" layoutY="45.0" prefHeight="23.0" prefWidth="306.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="45.0" />
+        <Button layoutX="396.146484375" layoutY="45.0" mnemonicParsing="false" onAction="#OnRefreshDatasourceClick" text="刷新数据" AnchorPane.rightAnchor="4.853515625" AnchorPane.topAnchor="45.0" />
+    </children>
+</AnchorPane>

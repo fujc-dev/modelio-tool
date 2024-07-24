@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="305.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lyrcsoft.modelio.controller.FDatasourceController">
+   <children>
+      <TableView fx:id="tableView" layoutX="11.0" layoutY="42.0" prefHeight="255.0" prefWidth="580.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0">
+          <GridPane.margin>
+              <Insets bottom="60.0" left="10.0" right="50.0" top="10.0" />
+          </GridPane.margin>
+          <padding>
+              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+          </padding>
+      </TableView>
+      <Button layoutX="483.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnAddDatasourceClick" prefHeight="23.0" prefWidth="103.0" text="新增数据源" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Button layoutX="233.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnRefreshDatasourceClick" prefHeight="23.0" prefWidth="103.0" text="刷新数据源" AnchorPane.rightAnchor="129.0" />
+   </children>
+</AnchorPane>
